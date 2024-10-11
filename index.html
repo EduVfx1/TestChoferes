@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Check-In Choferes</title>
+</head>
+<body>
+    <div class="container">
+        <div class="form-container">
+            <h2>Registro de Choferes</h2>
+            <form id="checkinForm" action="register.php" method="POST">
+                <input type="text" name="nombre" placeholder="Nombre" required>
+                <input type="text" name="telefono" placeholder="Teléfono" required>
+                <input type="text" name="numero_trailer" placeholder="Número de Tráiler" required>
+                <input type="email" name="email" placeholder="Email" required>
+                <input type="text" name="numero_orden" placeholder="Número de Orden" required>
+                <button type="submit">Registrar</button>
+            </form>
+        </div>
+        <div class="list-container">
+            <h2>Choferes Registrados</h2>
+            <ul id="driverList">
+                <!-- Aquí se agregarán los choferes registrados -->
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
